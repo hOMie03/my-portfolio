@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+	letter-spacing: -0.025em;
+	min-height: 100vh;
+}
+/* body:before {
+	content: " ";
+	height: 100vh;
+	width: 100vw;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-image: url('./loading.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	animation: yourAnimation 4s ease 0s 1 normal forwards;
+	pointer-events: none;
+}
+*/
+@keyframes yourAnimation { 
+	0.0% { opacity: 1; } 
+    75% { opacity: 1; } 
+    100% { opacity: 0; }
+}
+
+div {
+	padding: 5px;
+}
+.container {
+	display: grid;
+}
+
+.left-side {
+	grid-column: 1;
+	border: .1em solid #000;
+	font-family: Inconsolata, Menlo, Chicago, Geneva;
+}
+.intersection {
+	grid-column: 2;
+}
+.right-side {
+	grid-column: 3;
+}
+.relax-window .window-pane img {
+	width: 95%;
+	height: auto;
+}
+footer {
+	border: .1em solid #000;
+	font-family: Inconsolata, Menlo, Chicago, Geneva;
+}
+@media (max-width: 900px) {
+	footer {
+		position: fixed;
+		width: 97%;
+	}
+}

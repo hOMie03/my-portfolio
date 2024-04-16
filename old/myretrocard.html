@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omi's retro contact me card</title>
+    <link rel="stylesheet" href="./retrocardstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+</head>
+<body>
+    <section class="container">
+        <div class="left-side">
+            <aside class="sidebar">
+                    <div class="title-bar">
+                        <button aria-label="Close" class="close"></button>
+                        <h1 class="title">Certified Identification Card</h1>
+                        <button aria-label="Resize" class="resize"></button>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="window-pane">
+                        <ul class="menu-items">
+                          <li>My Name
+                            <ul>
+                              <li><a href="https://media.makeameme.org/created/this-is-me-ba955ed36b.jpg" target="_blank">Om Auti</a></li>
+                            </ul>
+                          </li>
+                          <li>About Me:)
+                              <ul>
+                                <li><a href="https://www.thefamouspeople.com/20-year.php" target="_blank">20 year-old</a></li>
+                                <li><a href="https://blog.aghires.com/hubfs/Blog%20Images2020/8_Job-Search-Meme_AgHires.jpg" target="_blank">fresher</a></li>
+                                <li><a href="https://blog.aghires.com/hs-fs/hubfs/Blog%20Images2020/3_Job-Search-Meme_AgHires.jpg" target="_blank">web designer/developer</a></li>
+                                <li><a href="https://github.com/homie03" target="_blank">i like coding..</a></li>
+                                <li><a href="https://www.figma.com/@homie03" target="_blank">..and designing..</a></li>
+                                <li><a href="https://open.spotify.com/user/w1sbecc5ypxfhbdmda7l1rubp" target="_blank">..and some music ♪</a></li>
+                              </ul>
+                            </li>
+                          <li>You can contact me here: (socials)
+                            <ul>
+                              <li><a href="mailto:autiom3123@gmail.com" target="_blank">e-mail me!</a></li>
+                              <li><a href="https://www.linkedin.com/in/om-auti/" target="_blank">linkedin</a></li>
+                              <li><a href="https://twitter.com/ggOm03" target="_blank">twitter</a></li>
+                            </ul>
+                          </li>
+                          <li>You can find my projects on:
+                            <ul>
+                              <li><a href="https://github.com/homie03" target="_blank">GitHub</a></li>
+                              <li><a href="https://www.figma.com/@homie03" target="_blank">Figma</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="../contactme.html" target="_blank">My New Digital Contact Card :D</a></li>
+                          <br><br><br><br><br>
+                        </ul>
+                    </div>
+            </aside>
+        </div>
+        <div class="intersection">&nbsp;&nbsp;</div>
+        <div class="right-side">
+            <div class="standard-dialog relax-window">
+                <div class="title-bar">
+                    <button aria-label="Close" class="close"></button>
+                    <h1 class="title"><i>Relax</i></h1>
+                    <button aria-label="Resize" class="resize"></button>
+                </div>
+                <div class="separator"></div>
+                <div class="window-pane">
+                    <img src="./relax.gif" />
+                    
+                    <audio id="myAudio">
+                      <source src="./relaxing.mp3" type="audio/mpeg">
+                      This HTML5 audio player is not supported by your browser
+                    </audio>
+                    <button type="button" onclick="aud_play_pause()" style="width: 5%;">
+                      <img src="https://unpkg.com/pixelarticons@1.8.0/svg/volume-x.svg" id="volumeBtn" />
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="standard-dialog check-out">
+                <img src="https://unpkg.com/pixelarticons@1.8.0/svg/warning-box.svg" width="5%" style="float: left;"/>
+                <p><b>check out the <a href="https://homie03.github.io/om/"><u><i>ｎｏｓｔａｌｇｉａ　ｐｌａｚａ　果栄ム</i></u></b></a>, my 1st website i ever made, which is inspired by Windows98, using simple HTML, CSS and JS.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="standard-dialog center scale-down" align="center">
+            <p class="dialog-text">made with <3 by om auti &copy;</p>
+        </div>
+    </footer>
+
+    <script>
+      function aud_play_pause() {
+        var myAudio = document.getElementById("myAudio");
+        var volume = document.getElementById("volumeBtn");
+        if (myAudio.paused) {
+          myAudio.play();
+          volume.src = "https://unpkg.com/pixelarticons@1.8.0/svg/volume-3.svg";
+
+        } else {
+          myAudio.pause();
+          volume.src = "https://unpkg.com/pixelarticons@1.8.0/svg/volume-x.svg";
+        }
+      }
+    </script>
+</body>
+</html>

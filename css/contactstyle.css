@@ -1,0 +1,136 @@
+@import"https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap";
+body {
+    font-family: "Lexend", sans-serif;
+    background: linear-gradient(45deg, #11001c, #3a015c, darkblue, #35012c, purple, red, darkorange);
+	background-repeat: no-repeat;
+	background-size: 400% 100%;
+	backdrop-filter: brightness(40%);
+	margin: 0;
+	min-height: 100vh;
+	animation: slide 20s infinite;
+    color: #fff;
+}
+
+
+
+/* body animation */
+@keyframes slide {
+	50% {
+		background-position: 100%;
+	}
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.myname {
+    width: 20rem;
+}
+.nickname {
+    font-size: 10px;
+}
+
+/* name glitch css */
+.glitch {
+    position: relative;
+    mix-blend-mode: lighten;
+}
+.glitch:before, .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    clip: rect(0, 0, 0, 0);
+}  
+.glitch:hover:before {
+    text-shadow: 4px 0 #ff00ff;
+    animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
+}  
+.glitch:after {
+    left: 4px;
+    text-shadow: -3px 0 #00ffc8;
+}
+.glitch:hover:after {
+    text-shadow: -5px 0 #00ffc8;
+    animation: glitch-anim-1 0.3s infinite ease-in-out alternate-reverse;
+}
+@keyframes glitch-anim-1 {
+    0% {clip: rect(30px, 9999px, 10px, 0);}
+    50% {clip: rect(50px, 9999px, 105px, 0);}
+    75% {clip: rect(2px, 9999px, 80px, 0);}
+    100% {clip: rect(90px, 9999px, 100px, 0);}
+}
+
+/* socials css */
+.socials {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: 100%;
+}
+.socials a {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: rgba(255, 255, 255, .12);
+    color: #fff;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+.socials a:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+.socials a i::before {
+    background: transparent;
+}
+.socials a i {
+    font-size: 1.5rem;
+}
+
+/* last.fm css */
+.recentlyplayedsong {
+    padding: 20px;
+    border-radius: 8px;
+    width: 28rem;
+    height: 6rem;
+    background-color: rgba(255, 255, 255, .12);
+}
+.recentlyplayedsong a img {
+    height: auto;
+    width: 450px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+footer a {
+    font-size: 5px;
+    color: #333;
+}
+
+/* responsive css */
+@media (max-width: 900px) {
+    .recentlyplayedsong {
+        width: 21.5rem;
+    }
+    .recentlyplayedsong a img {
+        width: 350px;
+    }
+}
