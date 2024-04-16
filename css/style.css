@@ -341,7 +341,7 @@ footer
     {
         flex-direction: column;
     }
-    .phone,.laptop
+    .phone,.laptop, .laptop2
     {
         transform: none !important;
     }
