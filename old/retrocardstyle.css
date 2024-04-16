@@ -55,9 +55,15 @@ footer {
 	border: .1em solid #000;
 	font-family: Inconsolata, Menlo, Chicago, Geneva;
 }
+.btnVolume {
+	width: 5%;
+}
 @media (max-width: 900px) {
 	footer {
 		position: fixed;
 		width: 97%;
+	}
+	.btnVolume {
+		width: 30px;
 	}
 }
