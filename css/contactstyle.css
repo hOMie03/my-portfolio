@@ -128,9 +128,9 @@ footer a {
 /* responsive css */
 @media (max-width: 900px) {
     .recentlyplayedsong {
-        width: 21.5rem;
+        width: 18rem;
     }
     .recentlyplayedsong a img {
-        width: 350px;
+        width: 300px;
     }
 }
